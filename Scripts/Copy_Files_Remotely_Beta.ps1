@@ -9,5 +9,3 @@
  Note: as my intention is also demonstrate my evolution over time I decided to keep the code as it was,
  if any request or improved version is necessary, please let know.
 #>
-
-````Powershell
