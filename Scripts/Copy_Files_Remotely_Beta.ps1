@@ -5,6 +5,9 @@
  
  As at the time this code was meant to be used in a joined domain computer, while executing this code 
  make sure that the current user has granted access permission on the remote computer.
+
+ Note: as my intention is also demonstrate my evolution over time I decided to keep the code as it was,
+ if any request or improved version is necessary, please let know.
 #>
 
 Add-Type -AssemblyName System.Windows.Forms
