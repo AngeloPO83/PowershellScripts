@@ -8,7 +8,7 @@ Last Update: 13/Feb/2025
 
 ### Script 1: Copy Files Remotely Beta (2019)
 This script allows the user using a GUI to copy files from a remote computer respecting the remote directory three.   
-![Copy_Files_Remotely_Beta](Images/Copy_Files_Remotely_Beta.jpeg)
+![Copy_Files_Remotely_Beta](Scripts/Images/Copy_Files_Remotely_Beta.jpeg)
 
 **Script's Path:** [Scripts/Copy_Files_Remotely_Beta.ps1](Scripts/Copy_Files_Remotely_Beta.ps1)
 
