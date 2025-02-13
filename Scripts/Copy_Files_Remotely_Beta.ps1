@@ -4,7 +4,7 @@
  computer, preserving the remote three directory.
  
  As at the time this code was meant to be used in a joined domain computer, while executing this code 
- make sure that the current user has granted access permission in the remote computer.
+ make sure that the current user has granted access permission on the remote computer.
 #>
 
 Add-Type -AssemblyName System.Windows.Forms
