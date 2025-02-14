@@ -1,9 +1,9 @@
 # PowerShell Scripts Portfolio
 
-Welcome to my Powershell scripts Portifolio! Below a collection of scripts that I created for many different tasks, I will regularly upload more codes.
+Welcome to my Powershell scripts Portifolio! Below a collection of scripts that I created for many different tasks, I will regularly upload more codes.  
+[My LinkedIn Profile](https://linkedin.com/in/angelo-polatto)
 
-Created: 13/Feb/2025
-
+Created: 13/Feb/2025  
 Last Update: 14/Feb/2025
 
 ## Scripts List
