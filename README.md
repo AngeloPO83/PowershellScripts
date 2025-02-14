@@ -18,7 +18,7 @@ At the time I was studying threads in order to have a better grasp of the concep
 
 ### Script 2: Reset Password Remotely (2019)
 After learning a bit about the concept of threads I started developing small other pieces of code to help the IT staff.
-This one allows you to reset an user account password in a remote computer.
+This one allows you to reset an user local account password in a remote computer.
 
 <img src="Scripts/Images/Reset_Computer_Pass.png" alt="Reset Password Remotely GUI" width="350" />
 
