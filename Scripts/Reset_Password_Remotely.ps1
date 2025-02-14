@@ -1,3 +1,18 @@
+<#
+ Developed in 2019 by Angelo Polatto using Powershell 3.0 supporting previous versions of Powershell.
+ In summary this software performs the password reset a an user local account remotely.
+ 
+ As at the time this code was meant to be used in a joined domain computer, while executing this code 
+ make sure that the current user has granted access permission on the remote computer.
+
+ Note: as my intention is also demonstrate my evolution over time I decided to keep the code as it was,
+ if any request or improved version is necessary, please let know.
+
+ The line #216 has to be changed in order to filter the computers that will populate the array, for the drop down menu.
+ Reference: "[void]$arrayComputers.add((Get-ADComputer -Filter 'Name -like "СHANGE_COMPUTER_NAME_FILTER*"' | foreach{($_.name).toUpper()}))"
+#>
+
+#Begin
 Add-Type -AssemblyName System.Windows.Forms
 [System.Windows.Forms.Application]::EnableVisualStyles()
 $ProgressPreference = 'SilentlyContinue'
@@ -197,7 +212,8 @@ $Global:jobCancelled = $false
 $Global:session = $null
 $nl = "`r`n"
 
-[void]$arrayComputers.add((Get-ADComputer -Filter 'Name -like "ARQ*"' | foreach{($_.name).toUpper()}))
+# Populate the array with computers, change the filter here
+[void]$arrayComputers.add((Get-ADComputer -Filter 'Name -like "СHANGE_COMPUTER_NAME_FILTER*"' | foreach{($_.name).toUpper()}))
 $arrayComputers = $arrayComputers | Sort-Object -Descending 
 $TextBoxComputer.AutoCompleteCustomSource.AddRange($arrayComputers)
 
@@ -331,7 +347,7 @@ $ButtonReset_Click = {  
                return $false 
             }
          }   
-
+         
          Function ChangePassword($Password, $userName){
             Invoke-Command -Session $Global:session -ArgumentList($Password, $userName) -ScriptBlock {
             param($Password, $userName)      
@@ -474,5 +490,5 @@ $ButtonReset.add_Click($ButtonReset_Click)
 $ButtonStop.add_Click($ButtonStop_Click)
 
 [void]$Form.controls.AddRange(@($iconInfoBox,$RichTextBoxOutput,$LabelComputer,$TextBoxComputer,$TextBoxUser,$TextBoxPassword,$ButtonStop,$ButtonReset,$LabelPassword,$LabelUser,$LabelLoop,$CheckBoxLoop))
-
 [void]$form.ShowDialog()
+#EOF
