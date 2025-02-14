@@ -1,8 +1,9 @@
 # PowerShell Scripts Portfolio
 
-Welcome to my Powershell scripts Portifolio! Below a collection of scripts that I created for many different tasks, I will regularly upload more codes. 
+Welcome to my Powershell scripts Portifolio! Below a collection of scripts that I created for many different tasks, I will regularly upload more codes.
 
-Last Update: 13/Feb/2025
+Created: 13/Feb/2025
+Last Update: 14/Feb/2025
 
 ## Scripts List
 
@@ -14,4 +15,12 @@ At the time I was studying threads in order to have a better grasp of the concep
 
 **Script's Path:** [Scripts/Copy_Files_Remotely_Beta.ps1](Scripts/Copy_Files_Remotely_Beta.ps1)
 
-### Script 2: Coming soon
+### Script 2: Reset Password Remotely (2019)
+After learning a bit about the concept of threads I started developing small other pieces of code to help the IT staff.
+This one allows you to change\reset the Administrator password of a remote computer.
+
+<img src="Scripts/Images/Reset_Password.jpg" alt="Reset Password Remotely GUI" width="350" />
+
+**Script's Path:** [Scripts/Copy_Files_Remotely_Beta.ps1](Scripts/Reset_Password_Remotely.ps1)
+
+### Script 3: Coming soon
