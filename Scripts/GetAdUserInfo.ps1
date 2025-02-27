@@ -160,14 +160,14 @@ $ButtonGetInfo_Click = {
             $RichTextBoxOutput.AppendText("Department: $($userInfo.Department)`r`n")
             $RichTextBoxOutput.AppendText("Last Logon: $($userInfo.LastLogonDate)`r`n")
 
-            $RichTextBoxOutput.AppendText("📌 Group Memberships:`r`n")
+            $RichTextBoxOutput.AppendText("Group Memberships:`r`n")
             if ($userGroups.Count -gt 0) {
                 $userGroups | ForEach-Object { $RichTextBoxOutput.AppendText("- $_`r`n") }
             } else {
                 $RichTextBoxOutput.AppendText("No groups found.`r`n")
             }
 
-            $RichTextBoxOutput.AppendText("🛠️ Applied Group Policies:`r`n")
+            $RichTextBoxOutput.AppendText("Applied Group Policies:`r`n")
             if ($userGPOs.Count -gt 0) {
                 $userGPOs | ForEach-Object { $RichTextBoxOutput.AppendText("- $_`r`n") }
             } else {
